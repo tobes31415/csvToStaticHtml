@@ -1,0 +1,30 @@
+{
+  "name": "kyles_ritual_builder",
+  "version": "1.0.0",
+  "description": "Merges .csv and .html files to create static html pages",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobes31415/csvToStaticHtml.git"
+  },
+  "keywords": [
+    "pathfinder",
+    "d&d",
+    "magic"
+  ],
+  "author": "Jake Tober",
+  "license": "MIT",
+  "dependencies": {
+    "del": "^2.2.2",
+    "fast-csv": "^2.3.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-copy": "0.0.2",
+    "gulp-sass": "^2.3.2",
+    "markup-js": "^1.5.21"
+  }
+}

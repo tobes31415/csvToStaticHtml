@@ -1,0 +1,129 @@
+<!Doctype>
+<html>
+
+<head>
+  <title>Ritual Magic </title>
+  <meta name="author" content="Kyle Rocheleau" />
+  <meta name="rating" content="General" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="ext/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body class="ritualMagic">
+  <!-- HEADER -->
+  <a name="toc"></a>
+  <h1>Ritual Magic</h1>
+  <!-- ToC -->
+  <ol class="ToC">
+
+    {{Rituals}}
+        <li>
+          <a href="#{{Name}}">{{Name}}</a>
+        </li>
+    {{/Rituals}}
+  </ol>
+  <hr/>
+  <!-- BODY -->
+  {{Rituals}}
+      <h2><a name="{{Name}}">{{Name}}</a> <a href="#toc"><i class="fa fa-angle-up" aria-hidden="true"></i></a></h2>
+      {{Variants}}
+          <table border=1 width="600" id="Arcane Lock" class="{{if #|first}}isBase{{/if}}">
+            <tr>
+              <td colspan="1">
+                <b>Name</b>
+              </td>
+              <td colspan="3">
+                {{Name}}
+              </td>
+              <td>
+                <b>Ritual Level</b>
+              </td>
+              <td>
+                {{Ritual Level}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Type</b>
+              </td>
+              <td>
+                {{Type}}
+              </td>
+              <td>
+                <b>Casting Time</b>
+              </td>
+              <td>
+                {{Casting Time}}
+              </td>
+              <td>
+                <b>Base DC</b>
+              </td>
+              <td>
+                {{Base DC}}
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="5">
+                <b>Requirements</b>
+              </td>
+              <td class="odd">
+                Classes
+              </td>
+              <td colspan="4" class="oddInverse">
+                {{Classes}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Primary Skill
+              </td>
+              <td colspan="4">
+                {{Primary Skill}}
+              </td>
+            </tr>
+            <tr>
+              <td class="odd midLabel">
+                Secondary Skill
+              </td>
+              <td colspan="4" class="oddInverse">
+                {{Secondary Skill}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Materials
+              </td>
+              <td colspan="4">
+                {{Materials}}
+              </td>
+            </tr>
+            <tr>
+              <td class="odd">
+                Other
+              </td>
+              <td colspan="4" class="oddInverse">
+                {{Other}}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="6" class="description">
+                {{Description}}
+              </td>
+            </tr>
+          </table>
+          {{if #|first}}
+          <div class="variants"/>
+          {{/if}}
+          {{if #|last}}
+          </div/>
+          {{/if}}
+      {{/Variants}}
+  {{/Rituals}}
+  <h2><a href="#toc"><i class="fa fa-angle-up" aria-hidden="true"></i></a></h2>
+  <!-- FOOTER -->
+  <div class='footer'>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.ritualMagic {
+    font-family: Helvetica, Arial, Sans-Serif;
+    padding:20px;
+    
+    background: rgba(200,200,200,1);
+    background: linear-gradient(to right, rgba(220,220,220,1) 0%, rgba(255,255,255,1) 100%);
+
+
+    ol.ToC {
+        list-style-type: none;
+        font-size:20px;
+    }
+    
+    table {
+        margin-left: 15px;
+        margin-bottom:15px;
+        border-collapse: collapse;
+        border-radius:10px;
+        padding:5px;
+        display:inline-block;
+        vertical-align:top;
+        
+        &.isBase {
+            display:block;
+        }
+        
+        td {
+            border:none;
+        }
+        
+        td.midLabel {
+            width: 120px;
+        }
+        
+        td.description {
+            font-size:18px;
+        }
+        
+        td.odd {
+            background: rgba(255,255,255,0);
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(246,246,246,0.3) 47%, rgba(237,237,237,0.6) 100%);
+        }
+        td.oddExtend {
+            background: rgba(237,237,237,0.3);
+        }
+        td.oddInverse {
+            background: rgba(237,237,237,0.3);
+            background: linear-gradient(to right, rgba(237,237,237,0.6) 0%, rgba(246,246,246,0.3) 53%, rgba(255,255,255,0) 100%);
+        }
+        
+        background: rgba(212,228,239,1);
+        background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+        
+        box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.75);    
+    }
+    
+    div.variants {
+        padding-left:40px;
+        padding-top:20px;
+        width:80%;
+    }
+}
